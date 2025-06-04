@@ -1,0 +1,23 @@
+{
+  "name": "heart_disease",
+  "version": "1.0.0",
+  "description": "It uses a range of machine learning data to predict if the user has a heart disease",
+  "dependencies": {
+    "core-js": "^3.41.0",
+    "node": "^23.11.0",
+    "node-bin-setup": "^1.1.3",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "parcel": "^2.14.4",
+    "sass": "^1.89.0",
+    "svgo": "^3.3.2"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Collins",
+  "license": "ISC"
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/heart_disease.b10d73a7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300..800;1,75,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- loads the entire Variable Font -->
+    <script type="module" src="/heart_disease.380419b9.js"></script>
+    <title>Heart disease detection</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="text-[#111518]">
+    <div class="relative flex flex-col bg-white overflow-x-hidden">
+      <div class="flex h-full grow flex-col">
+        <header class="background">
+          <nav class="flex whitespace-nowrap border-b px-10 py-3">
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2">
+                <div class="pulse">
+                  <span class="material-symbols-outlined font-medium text-stone-700">
+                    heart_plus
+                  </span>
+                </div>
+                <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">
+                  Health Insights
+                </h2>
+              </div>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-[#111518] text-sm font-bold leading-normal" href="#">About</a>
+                <div class="bg-gray-300 p-1 w-10 h-10 rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-stone-700">bookmark</span>
+                </div>
+              </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-3xl h-10 px-4 bg-[#1982e5] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Get Started</span>
+              </button>
+            </div>
+          </nav>
+
+          <div class="container">
+            <!-- review the use of @container -->
+            <div class="@[480px]:flex text-stone-900">
+              <div class="flex min-h-[70vh] md:w-1/2 flex-col gap-6 @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center md:items-start md:justify-start p-4">
+                <div class="flex pl-4 md:pl-8 mt-4 md:mt-8 flex-col gap-4 text-center md:text-left">
+                  <h1 class="text-4xl font-black leading-tight md:text-7xl font-normal font-oswald" style="font-family: Oswald, Arial, sans-serif">
+                    Predict Your Heart Disease Risk.
+                  </h1>
+                </div>
+                <div class="pl-12 md:pl-16 mt-4 md:mt-8">
+                  <h2 class="text-xl font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                    Our machine learning tool analyzes your health data to
+                    estimate your risk of heart disease. Get personalized
+                    insights and take control of your heart health.
+                  </h2>
+                  <button class="mt-6 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg px-2 py-3 bg-sky-800 text-white text-sm font-bold leading-normal">
+                    <span class="truncate">Start Prediction</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="container-about px-12 py-8">
+          <div class="mx-6">
+            <div class="flex items-center gap-4 p-4 w-full bg-sky-800">
+              <span class="material-symbols-outlined text-yellow-400 text-5xl">
+                database
+              </span>
+              <span>
+                <h2 class="text-[33px] text-white font-medium mb-0">
+                  Heart Disease
+                </h2>
+                <p class="text-white mt-0">Donated on 06/30/1988</p>
+              </span>
+            </div>
+            <div class="container-body px-4 py-8 border-b">
+              <p class="text-lg">
+                4 databases: Cleveland, Hungary, Switzerland, and the VA Long
+                Beach
+              </p>
+              <div class="grid grid-cols-3 grid-rows-2 gap-2">
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">
+                    Dataset Characteristics
+                  </h3>
+                  <p>Multivariate</p>
+                </div>
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">
+                    Subject Area
+                  </h3>
+                  <p>Health and Medicine</p>
+                </div>
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">
+                    Associated Tasks
+                  </h3>
+                  <p>Classification</p>
+                </div>
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">
+                    Feature Type
+                  </h3>
+                  <p>Categorical, Integer, Real</p>
+                </div>
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">#Instances</h3>
+                  <p>303</p>
+                </div>
+                <div class="p-4 rounded">
+                  <h3 class="text-xl font-semibold text-sky-600">#Features</h3>
+                  <p>13</p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion -->
+            <div class="max-w-xl md:max-w-full mx-auto my-8">
+              <div class="border rounded-lg divide-y" id="accordion">
+                <div class="content-container">
+                  <div class="question">What is the return Policy</div>
+                  <div class="answer">
+                    wetwj wjeje ehwjeedejhwe ewheiuee weweuiwejedfh
+                    rejfyhefjefhe ejfhejkedf edkbedfefjem fed ef sih rf ifh eif
+                    eif efh eif eif hei fiid fh
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  To be edited -->
+        <div class="px-10 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+              Input Your Health Details
+            </h2>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Age
+                </p>
+                <input placeholder="Enter your age" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Sex
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">Select your sex</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Chest Pain Type
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">Select chest pain type</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Resting Blood Pressure
+                </p>
+                <input placeholder="Enter resting blood pressure" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Serum Cholesterol
+                </p>
+                <input placeholder="Enter serum cholesterol" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Fasting Blood Sugar
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">Select fasting blood sugar</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Resting Electrocardiographic Results
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">
+                    Select resting electrocardiographic results
+                  </option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Maximum Heart Rate Achieved
+                </p>
+                <input placeholder="Enter maximum heart rate achieved" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Exercise-Induced Angina
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">Select exercise-induced angina</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  ST Depression
+                </p>
+                <input placeholder="Enter ST depression" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Slope of Peak Exercise ST Segment
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">
+                    Select slope of peak exercise ST segment
+                  </option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Number of Major Vessels
+                </p>
+                <input placeholder="Enter number of major vessels" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal" value="">
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111518] text-base font-medium leading-normal pb-2">
+                  Thalassemia
+                </p>
+                <select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-14 bg-[image:--select-button-svg] placeholder:text-[#637688] p-[15px] text-base font-normal leading-normal">
+                  <option value="one">Select thalassemia</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-center">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1982e5] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Predict</span>
+              </button>
+            </div>
+            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+              Prediction Results
+            </h2>
+            <p class="text-[#111518] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+              Your heart disease risk prediction will appear here after
+              submitting your health details.
+            </p>
+            <div class="flex px-4 py-3 justify-center">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f2f4] text-[#111518] text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Store Results Locally</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#637688] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#637688] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#637688] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#637688] text-base font-normal leading-normal">
+                © 2024 Health Insights. All rights reserved.
+              </p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

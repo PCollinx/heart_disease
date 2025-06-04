@@ -1,0 +1,42 @@
+.content-container {
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background 0.2s;
+  background: #fff;
+}
+
+.content-container .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #111518;
+}
+
+.content-container .question::after {
+  content: "expand_more";
+  font-family: "Material Symbols Outlined";
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.content-container.active .question::after {
+  content: "expand_less";
+  transform: rotate(180deg);
+}
+
+.content-container .answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9fafb;
+  color: #444;
+  padding: 0 1rem;
+  transition: max-height 0.3s, padding 0.3s;
+}
+
+.content-container.active .answer {
+  max-height: 200px;
+  padding: 1rem;
+}
