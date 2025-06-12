@@ -66,6 +66,18 @@ img {
   }
 }
 
+.button-predict {
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  overflow: hidden;
+}
+
 .header {
   width: 100vw;
   height: 100vh;
