@@ -37,6 +37,60 @@ img {
   }
 }
 
+.card {
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px;
+  display: flex;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.card h3 {
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 0 6px #0000001a;
+}
+
+.card p {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots__dot {
+  opacity: .7;
+  cursor: pointer;
+  background-color: #b9b9b9;
+  border: none;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1.75rem;
+  transition: all .5s;
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  opacity: 1;
+  background-color: #fff;
+}
+
 .rounded {
   border-radius: 16px;
   overflow: hidden;

@@ -174,64 +174,105 @@
               class="box-container w-full grid grid-cols-1 md:grid-cols-3 gap-6"
             >
               <!-- Box 1 -->
-              <div
-                class="flex bg-sky-600 justify-between flex-col rounded-xl shadow-md p-1 h-80"
-              >
-                <h3 class="text-sm text-white font-semibold mt-4 ml-4">
-                  Input Your Details
-                </h3>
-                <p class="text-sky-100 text-xs">
+              <div class="card bg-sky-600 h-80">
+                <h3 class="bg-sky-500 px-3 w-fit">Input Your Details</h3>
+                <p class="text-sky-100 text-xs ml-4">
                   Enter your health information in our secure form to begin your
                   assessment.
                 </p>
                 <img
-                  src="#"
+                  src="./src/img/heart_disease-2.jpg"
                   alt="Form Input"
-                  class="h-[70%] w-auto object-contain rounded-xl border-2"
+                  class="h-[70%] w-auto object-cover rounded-xl"
                 />
               </div>
               <!-- Box 2 -->
-              <div
-                class="flex flex-col justify-between bg-sky-600 rounded-xl shadow-md p-1 h-80"
-              >
-                <h3 class="text-sm text-white font-semibold mb-1">
-                  Data Processing
-                </h3>
+              <div class="card bg-sky-600 h-80">
+                <h3 class="bg-sky-500 px-3 w-fit">Data Processing</h3>
                 <p class="text-sky-100 text-xs">
                   Our algorithms analyze your data and compare it with trusted
                   medical research.
                 </p>
                 <img
-                  src="#"
+                  src="./src/img/heart_disease-1.jpg"
                   alt="Algorithm Processing"
-                  class="h-[70%] w-auto object-contain rounded-xl border-2"
+                  class="h-[70%] object-cover rounded-xl"
                 />
               </div>
               <!-- Box 3 -->
-              <div
-                class="flex flex-col justify-between bg-sky-600 rounded-xl shadow-md p-1 h-80"
-              >
-                <h3 class="text-sm text-white font-semibold text-sky-600 mb-1">
+              <div class="card bg-sky-600 h-80">
+                <h3 class="bg-sky-500 text-sky-600 w-fit">
                   Personalized Report
                 </h3>
-                <p class="text-sky-100 text-xs">
+                <p class="text-sky-100">
                   Receive a personalized report outlining your heart disease
                   risk factors.
                 </p>
                 <img
-                  src="#"
+                  src="./src/img/heart_disease-3.jpg"
                   alt="Personalized Report"
-                  class="h-[70%] w-auto object-contain rounded-xl border-2"
+                  class="h-[70%] w-auto object-cover rounded-xl"
                 />
               </div>
             </div>
-            <div class="why-trust-us max-w-xl md:max-w-full mx-auto my-8">
-              <h2 class="text-xl font-semibold text-sky-600">Why Trust Us</h2>
-              <ul>
-                <li>Powered by the UCI Heart Disease dataset</li>
-                <li>Advanced machine learning with 95%+ accuracy</li>
-                <li>Your data is never stored or shared</li>
-              </ul>
+            <div
+              class="p-4 bg-sky-50 max-w-xl md:max-w-full mx-auto my-8 rounded-sm"
+            >
+              <h2 class="text-center mt-4 text-xl font-semibold text-sky-600">
+                Why Trust Us
+              </h2>
+              <div class="mt-4 flex gap-8 flex-row justify-end">
+                <div class="flex bg-sky-200 w-full p-8 rounded-lg">
+                  <p class="self-end">
+                    Powered by the UCI Heart Disease dataset <br />
+                    Advanced machine learning with 95%+ accuracy <br />
+                    Your data is never stored or shared <br />
+                  </p>
+                </div>
+                <div
+                  class="rounded-lg h-[30rem] w-[40rem] relative overflow-hidden"
+                  id="carousel"
+                >
+                  <div
+                    class="slides flex transition-transform duration-500"
+                    id="carousel-track"
+                    style="width: 300%"
+                  >
+                    <img
+                      src="./src/img/heart_disease-2.jpg"
+                      class="slide w-full slide--1 rounded-lg object-cover"
+                      alt="Image 1"
+                    />
+                    <img
+                      src="./src/img/heart_disease-1.jpg"
+                      class="slide slide--2 w-full rounded-lg object-cover"
+                      alt="Image 2"
+                    />
+                    <img
+                      src="./src/img/heart_disease-3.jpg"
+                      class="slide slide--3 w-full rounded-lg object-cover"
+                      alt="Image 3"
+                    />
+                  </div>
+                  <!-- left arrow -->
+                  <button
+                    type="button"
+                    id="carousel-prev"
+                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex"
+                  >
+                    <span class="material-symbols-outlined">chevron_left</span>
+                  </button>
+                  <!-- Right Arrow -->
+                  <button
+                    type="button"
+                    id="carousel-next"
+                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex"
+                  >
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </button>
+                  <div class="dots"></div>
+                </div>
+              </div>
             </div>
             <a
               href="./src/pages/predict.html"
