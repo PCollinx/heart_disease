@@ -669,6 +669,20 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"2xGku":[function(require,module,exports,__globalThis) {
 var _webImmediateJs = require("core-js/modules/web.immediate.js");
 var _runtime = require("regenerator-runtime/runtime");
+const tabs = document.querySelectorAll(".operations__tab");
+const tabsContainer = document.querySelector(".operations__tab-container");
+const tabsContent = document.querySelectorAll(".operations__content");
+// TAB Section
+function handleTabClick(e) {
+    const clicked = e.target.closest(".operations__tab");
+    if (!clicked) return;
+    tabs.forEach((tab)=>tab.classList.remove("operations__tab--active"));
+    tabsContent.forEach((content)=>content.classList.remove("operations__content--active"));
+    console.log(clicked);
+    clicked.classList.add("operations__tab--active");
+    document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add("operations__content--active");
+}
+tabsContainer.addEventListener("click", handleTabClick);
 document.addEventListener("DOMContentLoaded", ()=>{
     document.querySelectorAll(".content-container .question").forEach((q)=>{
         q.addEventListener("click", function() {

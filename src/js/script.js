@@ -1,7 +1,33 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+// import "core-js/stable";
+// import "regenerator-runtime/runtime";
 
 document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".operations__tab");
+  const tabsContainer = document.querySelector(".operations__tab-container");
+  const tabsContent = document.querySelectorAll(".operations__content");
+
+  // TAB Section
+
+  function handleTabClick(e) {
+    const clicked = e.target.closest(".operations__tab");
+    if (!clicked) return;
+    tabs.forEach((tab) => tab.classList.remove("operations__tab--active"));
+    tabsContent.forEach((content) =>
+      content.classList.remove("operations__content--active")
+    );
+    console.log(clicked);
+
+    clicked.classList.add("operations__tab--active");
+    document
+      .querySelector(`.operations__content--${clicked.dataset.tab}`)
+      .classList.add("operations__content--active");
+  }
+  if (tabsContainer) {
+    tabsContainer.addEventListener("click", handleTabClick);
+  } else {
+    console.log("Tabs container not found");
+  }
+
   document.querySelectorAll(".content-container .question").forEach((q) => {
     q.addEventListener("click", function () {
       const container = this.parentElement;
