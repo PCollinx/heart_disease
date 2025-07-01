@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const tabs = document.querySelectorAll(".operations__tab");
     const tabsContainer = document.querySelector(".operations__tab-container");
     const tabsContent = document.querySelectorAll(".operations__content");
+    console.log("Script loaded!", document.body);
     // TAB Section
     function handleTabClick(e) {
         const clicked = e.target.closest(".operations__tab");

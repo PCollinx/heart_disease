@@ -1,11 +1,5 @@
-.button-predict {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  font-weight: 500;
+.background {
+  background-image: url("../img/header.jpeg");
+  background-size: cover;
+  background-position: top;
 }

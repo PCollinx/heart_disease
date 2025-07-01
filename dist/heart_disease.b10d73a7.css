@@ -234,18 +234,6 @@ img {
   background-size: cover;
 }
 
-.button-predict {
-  cursor: pointer;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  padding: .5rem 1rem;
-  font-weight: 500;
-  display: inline-flex;
-  overflow: hidden;
-}
-
 .header {
   width: 100vw;
   height: 100vh;
@@ -305,46 +293,15 @@ img {
   margin-left: -3rem;
 }
 
-.content-container {
+.button-predict {
   cursor: pointer;
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  transition: background .2s;
-}
-
-.content-container .question {
-  color: #111518;
-  justify-content: space-between;
+  border-radius: 5px;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  display: flex;
-}
-
-.content-container .question:after {
-  content: "expand_more";
-  font-family: Material Symbols Outlined;
-  font-size: 1.5rem;
-  transition: transform .2s;
-}
-
-.content-container.active .question:after {
-  content: "expand_less";
-  transform: rotate(180deg);
-}
-
-.content-container .answer {
-  color: #444;
-  background: #f9fafb;
-  max-height: 0;
-  padding: 0 1rem;
-  transition: max-height .3s, padding .3s;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  display: inline-flex;
   overflow: hidden;
-}
-
-.content-container.active .answer {
-  max-height: 200px;
-  padding: 1rem;
 }
 /*# sourceMappingURL=heart_disease.b10d73a7.css.map */

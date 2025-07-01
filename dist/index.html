@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;display=swap" rel="stylesheet">
     <!-- loads the entire Variable Font -->
     <title>Heart disease detection</title>
+    <script src="/heart_disease.09c24910.js" defer=""></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script defer="" src="/heart_disease.09c24910.js"></script>
   </head>
   <body class="text-[#111518]">
     <div class="relative flex flex-col bg-white overflow-x-hidden">
@@ -86,11 +86,12 @@
             <img class="w-full" src="/heart_disease-1.7460a100.jpg" alt="">
             <div class="features_feature">
               <div class="features_icon"></div>
-              <h5 class="features_header">What it does</h5>
+              <h5 class="features_header">Data Information</h5>
               <p class="features_details">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores odit commodi doloribus, iure eligendi labor Error
-                nemo accusantium saepe similique? Expedita saepe dignissimos
+                This database contains 76 attributes, but all published
+                experiments refer to using a subset of 14 of them. In
+                particular, the Cleveland database is the only one that has been
+                used by ML researchers to date.
               </p>
             </div>
 
@@ -98,9 +99,11 @@
               <div class="features_icon"></div>
               <h5 class="features_header">What it does</h5>
               <p class="features_details">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores odit commodi doloribus, iure eligendi labor Error
-                nemo accusantium saepe similique? Expedita saepe dignissimos
+                The "goal" field refers to the presence of heart disease in the
+                patient. It is integer valued from 0 (no presence) to 4.
+                Experiments with the Cleveland database have concentrated on
+                simply attempting to distinguish presence (values 1,2,3,4) from
+                absence (value 0).
               </p>
             </div>
             <img class="w-full" src="/heart_disease-2.4d128a81.jpg" alt="">
@@ -109,14 +112,13 @@
               <div class="features_icon"></div>
               <h5 class="features_header">What it does</h5>
               <p class="features_details">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores odit commodi doloribus, iure eligendi labor Error
-                nemo accusantium saepe similique? Expedita saepe dignissimos
+                The names and social security numbers of the patients were
+                recently removed from the database, replaced with dummy values.
               </p>
             </div>
           </div>
         </section>
-        <section class="section-3 max-w-[100rem] mx-auto mb-20 bg-gray-50 py-32 px-12 md:px-52">
+        <section class="section-3 max-w-[100rem] mx-auto bg-gray-50 py-32 px-12 md:px-52">
           <div class="max-w-full mb-8">
             <h2 class="header_2">How It Works</h2>
             <h4 class="header_4">
@@ -125,7 +127,7 @@
             </h4>
           </div>
           <div class="operations w-full mt-32 bg-white">
-            <div class="operations_tab-container flex justify-center w-full">
+            <div class="operations__tab-container flex justify-center w-full">
               <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
                 Personalized Report
               </button>
@@ -146,8 +148,8 @@
             <div class="operations__content operations__content--2">
               <div class="operations__icon"></div>
               <p>
-                Our algorithms analyze your data and compare it with trusted
-                medical research.
+                User assessment is done by entering your health data and
+                answering a series of questions.
               </p>
             </div>
             <div class="operations__content operations__content--3">
@@ -159,62 +161,41 @@
             </div>
           </div>
         </section>
-        <section class="">
-          <div class="p-4 bg-sky-50 max-w-xl md:max-w-full mx-auto my-8 rounded-sm">
-            <h2 class="text-center mt-4 text-xl font-semibold text-sky-600">
-              Why Trust Us
-            </h2>
-            <div class="mt-4 flex gap-8 flex-row justify-end">
-              <div class="flex bg-sky-200 w-full p-8 rounded-lg">
-                <p class="self-end">
-                  Powered by the UCI Heart Disease dataset <br>
-                  Advanced machine learning with 95%+ accuracy <br>
-                  Your data is never stored or shared <br>
-                </p>
-              </div>
-              <div class="rounded-lg h-[30rem] w-[40rem] relative overflow-hidden" id="carousel">
-                <div class="slides flex transition-transform duration-500" id="carousel-track" style="width: 300%">
-                  <img src="/heart_disease-2.4d128a81.jpg" class="slide w-full slide--1 rounded-lg object-cover" alt="Image 1">
-                  <img src="/heart_disease-1.7460a100.jpg" class="slide slide--2 w-full rounded-lg object-cover" alt="Image 2">
-                  <img src="/heart_disease-3.9da24318.jpg" class="slide slide--3 w-full rounded-lg object-cover" alt="Image 3">
-                </div>
-                <!-- left arrow -->
-                <button type="button" id="carousel-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex">
-                  <span class="material-symbols-outlined">chevron_left</span>
-                </button>
-                <!-- Right Arrow -->
-                <button type="button" id="carousel-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex">
-                  <span class="material-symbols-outlined">chevron_right</span>
-                </button>
-                <div class="dots"></div>
-              </div>
+
+        <section class="py-32 px-16 bg-sky-50 max-w-xl md:max-w-full mx-auto rounded-sm">
+          <div class="mt-4 flex gap-8 flex-row justify-end">
+            <div class="flex bg-white w-full p-8 rounded-lg">
+              <h2 class="header_2">Why Trust Us</h2>
+              <p class="self-end text-2xl font-medium">
+                Powered by the UCI Heart Disease dataset <br>
+                Advanced machine learning with 95%+ accuracy <br>
+                Your data is never stored or shared <br>
+              </p>
             </div>
-          </div>
-          <a href="/src/pages/predict.html" class="min-w-[84px] max-w-[480px] cursor-pointer overflow-hidden rounded-3xl py-4 px-4 bg-[#1982e5] text-white text-sm font-bold leading-normal">
-            Start Prediction
-          </a>
-          <!-- Accordion -->
-          <div class="max-w-xl md:max-w-full mx-auto my-8">
-            <div class="border rounded-lg divide-y" id="accordion">
-              <div class="content-container">
-                <div class="question">Data Information</div>
-                <div class="answer">
-                  This database contains 76 attributes, but all published
-                  experiments refer to using a subset of 14 of them. In
-                  particular, the Cleveland database is the only one that has
-                  been used by ML researchers to date. The "goal" field refers
-                  to the presence of heart disease in the patient. It is integer
-                  valued from 0 (no presence) to 4. Experiments with the
-                  Cleveland database have concentrated on simply attempting to
-                  distinguish presence (values 1,2,3,4) from absence (value 0).
-                  The names and social security numbers of the patients were
-                  recently removed from the database, replaced with dummy
-                  values.
-                </div>
+            <div class="rounded-lg h-[30rem] w-[40rem] relative overflow-hidden" id="carousel">
+              <div class="slides flex transition-transform duration-500 w-full" id="carousel-track">
+                <img src="/slide-3.01f251e4.jpg" class="slide w-full slide--1 image-slide" alt="Image 1">
+                <img src="/slide-2.ef19b7d4.jpg" class="slide slide--2 image-slide" alt="Image 2">
+                <img src="/slide-1.b3d0846f.jpg" class="slide slide--3 image-slide" alt="Image 3">
               </div>
+              <!-- left arrow -->
+              <button type="button" id="carousel-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex">
+                <span class="material-symbols-outlined">chevron_left</span>
+              </button>
+              <!-- Right Arrow -->
+              <button type="button" id="carousel-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white w-10 h-10 items-center flex">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+              <div class="dots"></div>
             </div>
           </div>
         </section>
+        <!-- <a
+            href="./src/pages/predict.html"
+            class="min-w-[84px] max-w-[480px] cursor-pointer overflow-hidden rounded-3xl py-4 px-4 bg-[#1982e5] text-white text-sm font-bold leading-normal"
+          >
+            Start Prediction
+          </a> -->
         <!--  To be edited -->
         <section class="px-12 py-8 mx-6">
           <div class="flex items-center gap-4 p-4 w-full bg-sky-800">
@@ -274,7 +255,7 @@
                 <a class="text-[#637688] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
               </div>
               <p class="text-[#637688] text-base font-normal leading-normal">
-                © 2024 Health Insights. All rights reserved.
+                © 2025 Health Insights. All rights reserved.
               </p>
             </footer>
           </div>
